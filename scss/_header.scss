@@ -1,0 +1,15 @@
+.header {
+  background: linear-gradient(145deg, #001099 0, #3ad9ff 96%);
+  grid-column: full-start / full-end;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-rows: 10vh 70vh 20vh;
+  grid-template-columns: [header-start] 100% [header-end];
+  overflow: hidden;
+
+  &__svg {
+    grid-row: 3/ -1;
+    align-self: end;
+    margin: -10px -1px;
+  }
+}

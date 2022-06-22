@@ -1,0 +1,79 @@
+.aboutUs {
+  display: grid;
+  grid-column: full-start / full-end;
+  grid-row: 2 / 3;
+  background-color: rgb(255, 255, 255);
+
+  grid-template-rows: 10vh 4rem auto auto;
+  grid-template-columns: repeat(6, 1fr);
+
+  @media only screen and (min-width: $bp-largest) {
+    height: 100vh;
+  }
+
+  &__heading {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    text-align: center;
+
+    > .heading-2 span {
+      color: $color-black;
+    }
+  }
+
+  &__left {
+    grid-row: 3 / -1;
+    grid-column: 1 / span 3;
+    display: grid;
+    background: url("../images/blob.svg") no-repeat top center;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-items: center;
+
+    &--pic {
+      max-width: 50%;
+      min-width: 270px;
+      height: auto;
+
+      @media only screen and (max-width: 500px) {
+        min-width: 150px;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      grid-column: 1 / span 4;
+    }
+
+    @media only screen and (max-width: 500px) {
+      grid-row: 3/4;
+      grid-column: 1/-1;
+    }
+  }
+
+  &__right {
+    grid-row: 3 / -1;
+    grid-column: 4 / -1;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    &--text {
+      & > p {
+        font-family: $font-display;
+        font-size: 1.8rem;
+        color: $color-black;
+        margin-top: 20px;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      grid-column: 5 / -1;
+    }
+
+    @media only screen and (max-width: 500px) {
+      grid-row: 4/5;
+      grid-column: 1/-1;
+    }
+  }
+}

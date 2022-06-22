@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portfolio | Osama Naqash</title>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!--================ Header =================-->
+      <section class="header" id="header">
+        <!--================= Navbar =================-->
+        <div class="navbar">
+          <div class="navbar__logo">
+            <img
+              srcset="images/logo.png 1200w, images/logo-small.png 500w"
+              src="images/logo.png"
+              alt="Logo"
+            />
+          </div>
+          <ul class="navbar__list">
+            <li class="navbar__list--item">
+              <a class="navbar__list--items" href="#header"> Home </a>
+            </li>
+            <li class="navbar__list--item">
+              <a class="navbar__list--items" href="#about"> About Us </a>
+            </li>
+            <li class="navbar__list--item">
+              <a class="navbar__list--items" href="#services"> Services </a>
+            </li>
+            <li class="navbar__list--item">
+              <a class="navbar__list--items" href="#contact"> Contact Us </a>
+            </li>
+          </ul>
+        </div>
+        <!--================ Landing =================-->
+        <div class="landing">
+          <div class="landing__text">
+            <h1 class="heading-1 heading-1--light">
+              Web <br />
+              Designing <br />
+              Development
+            </h1>
+            <h3 class="heading-4 heading-4--light">
+              We offer full responsive custom-built websites services.
+            </h3>
+          </div>
+          <div class="landing__button">
+            <a href="#contact" class="btn btn--white btn--animated"
+              >Contact Us</a
+            >
+          </div>
+          <img
+            class="landing__img"
+            srcset="
+              images/devices-small.png 360w,
+              images/devices-large.png 608w
+            "
+            alt="Devices Image"
+            sizes="(max-width: 700px) 50vw,  600px"
+            src="images/devices-large.png"
+          />
+        </div>
+        <div class="header__svg">
+          <img src="images/wave.svg" alt="" />
+        </div>
+      </section>
+      <!--================ About Us =================-->
+      <section class="aboutUs" id="about">
+        <div class="aboutUs__heading">
+          <h1 class="heading-2">About <span> Us</span></h1>
+        </div>
+        <div class="aboutUs__left">
+          <img class="aboutUs__left--pic" src="images/pic.png" alt="" />
+        </div>
+        <div class="aboutUs__right">
+          <div class="aboutUs__right--text">
+            <h2 class="heading-3">Hello there.</h2>
+            <p>
+              My name is Osama and I am a web developer with experience in
+              backend technologies. Focusing on the frontend to increase my
+              arsenal. I am passionate about delivering the best results.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--================ Our Services =================-->
+      <section class="services" id="services">
+        <div class="services__heading">
+          <h1 class="heading-2">
+            <span> Our</span>
+            Services
+          </h1>
+        </div>
+        <div class="services__cards">
+          <div class="services__cards--item">
+            <img
+              class="services__cards--item--icon"
+              src="images/1.svg"
+              alt=""
+            />
+            <h3 class="">Fully Responsive Design</h3>
+            <p class="feature-box__text">
+              Every site will be responsive and fit. We make sure your website
+              is accessable from every device.
+            </p>
+          </div>
+          <div class="services__cards--item">
+            <img
+              class="services__cards--item--icon"
+              src="images/2.svg"
+              alt=""
+            />
+            <h3 class="">Save Your Money</h3>
+            <p class="feature-box__text">
+              We offer fair price for best work in the market.
+            </p>
+          </div>
+          <div class="services__cards--item">
+            <img
+              class="services__cards--item--icon"
+              src="images/3.svg"
+              alt=""
+            />
+            <h3 class="">Web Development</h3>
+            <p class="feature-box__text">
+              We provide backend services using vanilla php and laravel
+              framework.
+            </p>
+          </div>
+        </div>
+        <div class="services__tech">
+          <div class="services__tech--heading">
+            <h1 class="heading-3 heading-3--light">Technologies</h1>
+          </div>
+          <div class="services__tech--icons">
+            <img src="images/technologies/html5.svg" alt="" />
+            <img src="images/technologies/css3.svg" alt="" />
+            <img src="images/technologies/javascript.svg" alt="" />
+            <img src="images/technologies/php.svg" alt="" />
+            <img src="images/technologies/laravel.svg" alt="" />
+            <img src="images/technologies/mysql.svg" alt="" />
+            <img src="images/technologies/sass.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!--================ Contact Us =================-->
+      <section class="contact" id="contact">
+        <div class="contact__heading">
+          <h2 class="heading-2">Get in<span> touch </span></h2>
+        </div>
+        <form action="#" class="contact__form">
+          <div class="contact__form__group">
+            <input
+              type="text"
+              class="contact__form__input"
+              placeholder="Name"
+              id="name"
+              required
+            />
+            <label for="name" class="contact__form__label">Name</label>
+          </div>
+
+          <div class="contact__form__group">
+            <input
+              type="email"
+              class="contact__form__input"
+              placeholder="Email Address"
+              id="email"
+              required
+            />
+            <label for="email" class="contact__form__label"
+              >Email Address</label
+            >
+          </div>
+
+          <div class="contact__form__group">
+            <div class="contact__form__textarea">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="contact__form__group">
+            <button class="btn btn--blue">Send</button>
+          </div>
+        </form>
+      </section>
+      <!--================ Footer =================-->
+      <footer class="footer">
+        <div class="footer__svg">
+          <img src="images/wave2.svg" alt="" />
+        </div>
+        <div class="footer__container">
+          <div class="footer__container__item">
+            <h2 class="heading-5 heading-5--light">Contact</h2>
+            <ul class="footer__nav">
+              <li class="footer__nav--item">
+                <a href="mailto:osamanaqash@gmail.com" class="email__address"
+                  >osamanaqash@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__container__item">
+            <h2 class="heading-5 heading-5--light">Services</h2>
+            <ul class="footer__nav">
+              <li class="footer__nav--item">Web Design</li>
+              <li class="footer__nav--item">CMS Development</li>
+              <li class="footer__nav--item">SEO Services</li>
+              <li class="footer__nav--item">Internet Marketing</li>
+            </ul>
+          </div>
+          <div class="footer__container__item">
+            <h2 class="heading-5 heading-5--light">Navigation</h2>
+            <ul class="footer__nav">
+              <li class="footer__nav--item">
+                <a href="#header"> Home </a>
+              </li>
+              <li class="footer__nav--item">
+                <a href="#about"> About Us </a>
+              </li>
+              <li class="footer__nav--item">
+                <a href="#services"> Services </a>
+              </li>
+              <li class="footer__nav--item">
+                <a href="#contact"> Contact Us </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>Copyright © 2021 All rights reserved | Osama Naqash</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
